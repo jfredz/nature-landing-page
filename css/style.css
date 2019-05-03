@@ -98,6 +98,12 @@ body {
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
+.u-margin-top-large {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 9rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -110,6 +116,10 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -226,10 +236,13 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
     overflow: hidden; }
     .card__side--back {
-      background-color: red;
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -241,6 +254,10 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture-1 {
       background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
+    .card__picture-2 {
+      background-image: url(../img/nat-6.jpg), linear-gradient(to right bottom, #7ed56f, #28b485); }
+    .card__picture-3 {
+      background-image: url(../img/nat-7.jpg), linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -258,6 +275,10 @@ body {
     box-decoration-break: clone; }
     .card__heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
+    .card__heading-span-2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+    .card__heading-span-3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
   .card__details ul {
     list-style: none;
     width: 80%;
@@ -268,11 +289,26 @@ body {
       padding: 1rem; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; }
+  .card__price {
+    color: #fff;
+    padding-bottom: 2rem; }
+    .card__price-only {
+      font-size: 1.6rem; }
+    .card__price-value {
+      font-size: 7rem;
+      font-weight: 100; }
 
 .row {
   max-width: 1080px;
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 0px; }
   .row::after {
     content: "";
     clear: both;
@@ -303,5 +339,9 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 13rem 0;
   margin-top: -7rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }

@@ -17,17 +17,18 @@
 		box-shadow: 0 1.5rem 4rem $color-black-shadow;
 		overflow: hidden;
 
-		
-		&--front{
-
-		}
-
 		&--back {
-			background-color: red;
 			transform: rotateY(180deg);
-
 			&-1 {
 				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+			}
+
+			&-2 {
+				background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+			}
+
+			&-3 {
+				background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 			}
 		}
 
@@ -51,6 +52,16 @@
 		&-1  {
 			background-image: url(../img/nat-5.jpg), 
 			linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);	
+		}
+
+		&-2  {
+			background-image: url(../img/nat-6.jpg), 
+			linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);	
+		}
+
+		&-3  {
+			background-image: url(../img/nat-7.jpg), 
+			linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);	
 		}
 	}
 
@@ -77,6 +88,19 @@
 			rgba($color-secondary-light, .8), 
 			rgba($color-secondary-dark, .8));
 		}
+		
+		&-2 {
+			background-image: linear-gradient(to right bottom, 
+			rgba($color-primary-light, .8), 
+			rgba($color-primary-dark, .8));
+		}
+
+		&-3 {
+			background-image: linear-gradient(to right bottom, 
+			rgba($color-tertiary-light, .8), 
+			rgba($color-tertiary-dark, .8));
+		}
+
 	}
 
 	&__details {
@@ -97,4 +121,28 @@
 		}
 	}
 
+	&__cta {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 80%;
+	}
+
+	&__price {
+		color: $color-white;
+		padding-bottom: 2rem;
+
+		&-only {
+			font-size: 1.6rem;
+		}
+
+		&-value {
+			font-size: 7rem;
+			font-weight: 100;
+		}
+
+	}
+ 
 }
